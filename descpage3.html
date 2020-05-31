@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Template 1 |</title>
+    <link rel="stylesheet" href="template1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("nav").accessibleDropDown();
+    });//end ready
+    $.fn.accessibleDropDown = function() {
+        var el = $(this);
+        $("a", el).focus(function(){
+            $(this).parents("li").addClass("hover");
+        }).blur(function(){
+            $(this).parents("li").removeClass("hover");
+        });
+    }
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Self Taught Developer Guide</h1>
+            <nav>
+                <nav>
+                    <ul>
+                        <li><a href="slider.html">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="product.html">Product</a>
+                            <ul>
+                                <li><a href="#">Self Taught</a></li>
+                                <li><a href="#">Coding Bootcamp</a></li>
+                                <li><a href="#">Online Coding Bootcamp</a></li>
+                                <li><a href="#">Traditonal University</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mechandise</a>
+                            <ul>
+                                <li><a href="#">Hoodies</a></li>
+                                <li><a href="#">Gear</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Bags</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Information</a>
+                            <ul>
+                                <li><a href="#">Sub-Topic 1</a></li>
+                                <li><a href="#">Sub-Topic 2</a></li>
+                                <li><a href="#">Sub-Topic 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul> 
+                </nav>
+            </nav>
+        </header>
+        <aside>
+            <p>The sidebar content</p>
+                <p>The sidebar content</p>
+                <p>The sidebar content</p>
+                <p>The sidebar content</p>
+                <p>The sidebar content</p>
+                <p>The sidebar content</p>
+                <p>The sidebar content</p>
+        </aside>
+        <section class="contactSection">
+            <h2>Online Coding Bootcamps</h2>
+            <p>All About Online Coding Bootcamps</p>
+            <img class="smImg" src="images/jefferson-santos-9SoCnyQmkzI-unsplash.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div>
+                <video width="320" height="180" controls muted>
+                    <source src="av/Gamers Choice - Google Chrome 2020-05-03 00-10-14.mp4" type="video/mp4">
+                        Your browser does not support this video tag.
+                </video>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        </article>
+        </article>
+
+            
+
+        </section>
+        <footer>
+            <p>Copyright @ 2020 All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
